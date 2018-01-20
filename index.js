@@ -13,9 +13,9 @@ module.exports = function(homebridge) {
     Characteristic = homebridge.hap.Characteristic;
     HomebridgeAPI = homebridge;
 
-    homebridge.registerPlatform("homebridge-people", "People", PeoplePlatform);
-    homebridge.registerAccessory("homebridge-people", "PeopleAccessory", PeopleAccessory);
-    homebridge.registerAccessory("homebridge-people", "PeopleAllAccessory", PeopleAllAccessory);
+    homebridge.registerPlatform("homebridge-people-pinger", "People", PeoplePlatform);
+    homebridge.registerAccessory("homebridge-people-pinger", "PeopleAccessory", PeopleAccessory);
+    homebridge.registerAccessory("homebridge-people-pinger", "PeopleAllAccessory", PeopleAllAccessory);
 }
 
 // #######################
