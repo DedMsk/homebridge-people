@@ -184,9 +184,9 @@ function PeopleAccessory(log, config, platform) {
 
 PeopleAccessory.encodeState = function(state) {
   if (state)
-      return Characteristic.OccupancyDetected.OCCUPANCY_DETECTED;
-  else
       return Characteristic.OccupancyDetected.OCCUPANCY_NOT_DETECTED;
+  else
+      return Characteristic.OccupancyDetected.OCCUPANCY_DETECTED;
 }
 
 PeopleAccessory.prototype.getState = function(callback) {
